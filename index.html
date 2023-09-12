@@ -1,221 +1,699 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <!-- Metadatos -->
-  <meta charset="utf-8">
-  <meta name="keywords" content="HTML, CSS, JavaScript, React">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Titulo -->
-  <title>Play & Win</title>
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="img/ike.png">
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <!-- Iconos de Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <!-- FONTs -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Play & Win</title>
 
-  <header>
+		<!-- Agregamos favicon -->
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="./img/Juegos/ike.png" />
+		<!-- Incluimos tipografia de google fonts -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+		<!-- Incluimos CSS de FontAwesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<!-- Incluimos CSS y JS de Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous" />
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"></script>
 
-    <a id="logo">
-      <img src="./img/logo.png" title="Logo app">
-    </a>
+		<!-- Agregamos liga a nuestros estilos -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="./css/style.css" />
 
-    <nav>
+		<!-- Agregamos liga a nuestro JS -->
+		<!-- 'defer': indica que el script debe ejecutarse despues de renderizar el html
+                pero antes de activar evento DOMContentLoaded-->
+		<script
+			src="./js/main.js"
+			defer></script>
+	</head>
+	<body>
+		<header class="fx-row fx-content-space-between fx-align-items-center">
+			<a
+				id="logo"
+				class="fx-row">
+				<img
+					src="./img/Juegos/logo.png"
+					title="Logo app" />
+			</a>
 
-      <ul>
-        <li class="lista"><a href="#reseña">Reseña de la semana</a></li>
-        <li class="lista"><a href="#eventos">Eventos</a></li>
-        <li class="lista"><a href="#juegos">Top juegos</a></li>
-        <li class="lista"><a href="#contacto">Contacto</a></li>
-      </ul>
+			<div class="navbar navbar-dark responsive-cel">
+				<div class="container-fluid">
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasDarkNavbar"
+						aria-controls="offcanvasDarkNavbar"
+						aria-label="Toggle navigation"
+						style="background-color: rgb(107, 4, 4)">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="offcanvas offcanvas-end text-bg-dark"
+						tabindex="-1"
+						id="offcanvasDarkNavbar"
+						aria-labelledby="offcanvasDarkNavbarLabel">
+						<div class="offcanvas-header">
+							<h5
+								class="offcanvas-title lista"
+								id="offcanvasDarkNavbarLabel">
+								GAMERS CODE
+							</h5>
+							<button
+								type="button"
+								class="btn-close btn-close-white"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body">
+							<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+								<li class="nav-item lista-cel">
+									<button
+										type="button"
+										class="btn btn-dark"
+										data-bs-dismiss="offcanvas"
+										aria-label="Close">
+										<a href="#reseña">- Reseña de la semana </a>
+									</button>
+								</li>
+								<li class="nav-item lista-cel">
+									<button
+										type="button"
+										class="btn btn-dark"
+										data-bs-dismiss="offcanvas"
+										aria-label="Close">
+										<a href="#eventos"> - Eventos </a>
+									</button>
+								</li>
+								<li class="nav-item lista-cel">
+									<button
+										type="button"
+										class="btn btn-dark"
+										data-bs-dismiss="offcanvas"
+										aria-label="Close">
+										<a href="#juegos">- Top juegos</a>
+									</button>
+								</li>
+								<li class="nav-item lista-cel">
+									<button
+										type="button"
+										class="btn btn-dark"
+										data-bs-dismiss="offcanvas"
+										aria-label="Close">
+										<a href="#footer">- Contacto</a>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    </nav>
+			<nav class="fx-row xs-hide fx-align-items-center responsive-menu">
+				<ul class="fx-row fx-content-space-between fx-align-items-center">
+					<li class="lista"><a href="#reseña">Reseña de la semana</a></li>
+					<li class="lista"><a href="#eventos">Eventos</a></li>
+					<li class="lista"><a href="#juegos">Top juegos</a></li>
+					<li class="lista"><a href="#footer">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
 
-  
+		<main>
+			<section
+				id="home"
+				class="fx-column fx-content-center fx-align-items-center">
+				<div
+					class="home-banner fx-column fx-content-center fx-align-items-center">
+					<h1>Inicio</h1>
+					<h3>Navega con las ultimas novedades de la Industria</h3>
+					<p>
+						Aquí encontrarás las últimas reseñas de videojuegos que te
+						mantendrán al tanto de los títulos más emocionantes, análisis
+						profundos que exploran cada rincón de la industria, y eventos
+						exclusivos que te sumergirán en la cultura gamer como nunca antes.
+					</p>
+				</div>
+			</section>
 
-  </header>
+			<section id="reseña">
+				<h1>Reseña de la semana</h1>
 
-  <main>
+				<div
+					class="destacados-container fx-row fx-xs-column fx-content-space-between fx-align-items-center">
+					<div class="destacado-info">
+						<img
+							src="./img/Juegos/Banjo-kazooie.jpg"
+							alt="Banjo Kazooie"
+							class="game-image" />
 
-     <section class="seccion" id="home">
+						<h3 class="game-title">Reseña de "Banjo-Kazooie"</h3>
+						<p class="reviewer">Reseña por: Sato Seeei</p>
 
-      <div class="home-banner">
-        <h1>Inicio</h1>
-        <h3>Navega con las ultimas novedades de la Industria</h3>
-        <p>Aquí encontrarás las últimas reseñas de videojuegos que te mantendrán al tanto de los títulos más emocionantes, análisis profundos que exploran cada rincón de la industria, y eventos exclusivos que te sumergirán en la cultura gamer como nunca antes.</p>
-      </div>
-    </section>
+						<span class="star">&#9733;</span>
+						<span class="star">&#9733;</span>
+						<span class="star">&#9733;</span>
+						<span class="star">&#9733;</span>
+						<span class="star">&#9733;</span>
 
-      <section class="seccion" id="reseña">
-        <h1 class="prueba">Reseña Semanal</h1>
-        <div class="container">
-          <div class="game-review">
-            <h1 class="game-title">Reseña de "Banjo-Kazooie"</h1>
-            <p class="reviewer">Reseña por: Sato Seeei</p>
-            <div class="review-content">
-              <p>
-                "Banjo-Kazooie es un juego multiplataforma en el cual un noble oso tiene que rescatar a su bella hermana la cual fue secuestrada por una feminista..
-              </p>
-  
-            </div>
-            <div class="rating">
-              Calificación: <span>5/5</span>
-            </div>
-            <img src="img/Imagen2.jpg" alt="Imagen del Juego" class="game-image review-image">
-  
-          </div>
-        </div>
-      </section>
- 
+						<p>
+							"Banjo-Kazooie es un juego multiplataforma en el cual un noble oso
+							tiene que rescatar a su bella hermana la cual fue secuestrada por
+							una feminista..
+						</p>
+					</div>
 
-    <!-- Eventos-->
-    <section class="seccion testimonios" id="eventos">
-      <h1>Eventos</h1>
-      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <p class="testimonio-texto">Fiesta en la casa del macoy. Tematica smash... entre menos ropa mejor </p>
-              <div class="testimonio-info">
-                <p class="cliente">Sato Seeei</p>
-                <p class="cargo">Administrador de la pagina</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <p class="testimonio-texto">Fiesta de desnudos en la casa del administrador. No ropa</p>
-              <div class="testimonio-info">
-                <p class="cliente">Macoy Rountree</p>
-                <p class="cargo">Practicante de la pagina</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              
-              <p class="testimonio-texto">Reunion en la casa mia, para agradecer a dios por todas las bendiciones de la semana. "No todos somos maniacos en esta pagina" </p>
-              <div class="testimonio-info">
-                <p class="cliente">Omar Castro</p>
-                <p class="cargo">Dueño de la pagina</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
+					<div class="clientes-comentarios fx-column">
+						<div class="comentario fx-row">
+							<div class="cliente">
+								<img
+									src="./img/Juegos/Macoy.jpeg"
+									alt="Macoy" />
+							</div>
+							<div class="cliente-mensaje">
+								<p>
+									Pregunta. si me da mucha rasquera la cola y me rasco muy
+									seguido ¿Me hace automaticamente gay?
+								</p>
+								<p class="cliente-firma">- Macoy</p>
+							</div>
+						</div>
 
-    </section>
+						<div class="comentario fx-row">
+							<div class="cliente">
+								<img
+									src="./img/Juegos/FH.jpeg"
+									alt="FH" />
+							</div>
+							<div class="cliente-mensaje">
+								<p>Guardemos los cambios</p>
+								<p class="cliente-firma">- Fernando Herrera</p>
+							</div>
+						</div>
 
-    <!-- Top juegos -->
+						<div class="comentario fx-row">
+							<div class="cliente">
+								<img
+									src="./img/Juegos/Sato.jpeg"
+									alt="Sato" />
+							</div>
+							<div class="cliente-mensaje">
+								<p>¿Por qué no puedo ver mi pene?</p>
+								<p class="cliente-firma">- Sato Seeei</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-    <section class="seccion" id="juegos">
-        <h1>Top juegos</h1>
-      <div id="carouselExampleDark" class="carousel carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-         
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="img/imagen1.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="carousel-text">Resident Evil 4 Remake</h5>
-              <p class="carousel-text"> "Resident Evil 4 Remake" es un hito en la serie que redefinió los juegos de survival horror. Lanzado en 2023, su innovadora perspectiva sobre el hombro y su atmósfera tensa cautivaron a los jugadores.</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="img/imagen3.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="carousel-text">Zelda Tears of the Kingdom</h5>
-              <p class="carousel-text">The Legend of Zelda: Tears of the Kingdom es una secuela de Breath of the Wild en todos los sentidos de la palabra, ya que la esencia del juego no ha cambiado</p>
-            </div>
-          </div>
+			<section id="juegos">
+				<h1>TOP Juegos</h1>
 
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button  class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+				<div class="card-container fx-row fx-xs-column">
+					<div class="card">
+						<img
+							src="./img/Juegos/resident-evil.png"
+							alt="resident" />
+						<h3>Resident Evil 4 Remake</h3>
+						<p>
+							"Resident Evil 4 Remake" es un hito en la serie que redefinió los
+							juegos de survival horror. Lanzado en 2023, su innovadora
+							perspectiva sobre el hombro y su atmósfera tensa cautivaron a los
+							jugadores
+						</p>
+						<button
+							class="button-action"
+							id="btn-modelo-1"
+							data-bs-toggle="modal"
+							data-bs-target="#modal-modelo-1">
+							Ver Detalle
+						</button>
+					</div>
 
-    </section>
+					<div class="card">
+						<img
+							src="./img/Juegos/zelda-tears.jpg"
+							alt="zelda" />
+						<h3>Zelda Tears of the Kingdom</h3>
+						<p>
+							The Legend of Zelda: Tears of the Kingdom es una secuela de Breath
+							of the Wild en todos los sentidos de la palabra, ya que la esencia
+							del juego no ha cambiado. Es por ello que Nintendo ha decidido
+							esforzarme mucho más.
+						</p>
+						<button
+							class="button-action"
+							id="btn-modelo-2"
+							data-bs-toggle="modal"
+							data-bs-target="#modal-modelo-2">
+							Ver Detalle
+						</button>
+					</div>
+					<div class="card">
+						<img
+							src="./img/Juegos/god-war.webp"
+							alt="resident" />
+						<h3>God of War Ragnarok</h3>
+						<p>
+							"God of War: Ragnarok" es una esperada continuación de la épica
+							saga de Kratos. En esta entrega, el guerrero espartano se enfrenta
+							a nuevos desafíos en el mundo nórdico mientras explora mitos y
+							leyendas.
+						</p>
+						<button
+							class="button-action"
+							id="btn-modelo-3"
+							data-bs-toggle="modal"
+							data-bs-target="#modal-modelo-3">
+							Ver Detalle
+						</button>
+					</div>
+				</div>
+			</section>
 
+			<section
+				id="eventos"
+				class="testimonios seccion-clara carrusel-section">
+				<h1>Eventos</h1>
+				<h3 class="seccion-descripcion">
+					Estos son los eventos que se llevaran a cabo en los proximos meses
+				</h3>
 
-    <!-- Contacto -->
-    <section id="contacto"  class="contacto seccion-oscura">
-      <div class="container">
-        <div class="container text-center rectangulo d-flex justify-content-evenly">
-          <div class="row">
-            <div class="col-12 col-md-4 seccion-titulo">
-              ¡Contactanos!
-            </div>
-            <div class="col-12 col-md-4 descripcion">
-              ¿Listo para llevar tu experiencia de juego al siguiente nivel? Estamos aquí para escucharte
-            </div>
-            <div class="col-12 col-md-4">
-              <a href="mailto:a219222914@unison.mx">
-                <button type="button">  
-                  Contacto
-                  <i class="bi bi-envelope-check-fill"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+				<!-- Carrusel -->
+				<div
+					id="testimonios-carrusel"
+					class="carousel carousel-dark slide"
+					data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="container">
+								<img
+									class="testimonio-imagen rounded-circle"
+									src="img/Juegos//Mario-Sato.jpg"
+									alt="Foto de administrador" />
+								<p class="testimonio-texto">
+									Fiesta en la casa del macoy. Tematica smash... entre menos
+									ropa mejor
+								</p>
+								<div class="testimonio-info">
+									<p class="cliente">Sato Seeei</p>
+									<p class="cargo">Administrador de la pagina</p>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="container">
+								<img
+									class="testimonio-imagen rounded-circle"
+									src="img/Juegos/bowser-mamado.jpg"
+									alt="Foto de Practicante" />
+								<p class="testimonio-texto">
+									Fiesta de desnudos en la casa del administrador. No ropa
+								</p>
+								<div class="testimonio-info">
+									<p class="cliente">Macoy Rountree</p>
+									<p class="cargo">Practicante de la pagina</p>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="container">
+								<img
+									class="testimonio-imagen rounded-circle"
+									src="img/Juegos/link-chistoso.jpg"
+									alt="Foto de Dueño" />
+								<p class="testimonio-texto">
+									Reunion en la casa mia, para agradecer a dios por todas las
+									bendiciones de la semana. "No todos somos maniacos en esta
+									pagina"
+								</p>
+								<div class="testimonio-info">
+									<p class="cliente">Omar Castro</p>
+									<p class="cargo">Dueño de la pagina</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#testimonios-carrusel"
+						data-bs-slide="prev">
+						<span
+							class="carousel-control-prev-icon"
+							aria-hidden="true"></span>
+						<span class="visually-hidden">Anterior</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#testimonios-carrusel"
+						data-bs-slide="next">
+						<span
+							class="carousel-control-next-icon"
+							aria-hidden="true"></span>
+						<span class="visually-hidden">Siguiente</span>
+					</button>
+				</div>
+			</section>
+		</main>
 
-  </main>
-    
-    <!-- Pie de pagina (footer) -->
-    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
-      <img class="footer-logo" src="img/ImagenFooter.png" alt="Logo del Footer">
-      <p class="footer-texto text-center">Síguenos en las redes sociales para estar al tanto de concursos, avances exclusivos <br> y contenido detrás de escena. Tu experiencia de juego  es nuestra prioridad, <br> y nos esforzamos por brindarte  un  espacio donde  puedas explorar,<br> competir y compartir tu amor por los videojuegos...</p>
-      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-twitter"></i>
-        </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-github"></i>
-        </a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-instagram"></i>
-        </a>
-        <a href="mailto:a219222914@unison.mx" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-envelope"></i>
-        </a>
-      </div>
-      <div class="Derechos-de-Autor">Creado por Omar Castro (2023) &#169;</div>
-    </footer>
+		<footer
+			id="footer"
+			class="fx-column fx-content-center fx-align-items-center">
+			<div class="contacto-container">
+				<h2>Contacto</h2>
 
-<button id="btn-ir-arriba">
-    <svg viewBox="0 0 24 24">
-      <path d="m4 16 8-8 8 8"></path>
-    </svg>
-  </button>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<script src="./js/main.js"></script>
-</body>
+				<form
+					id="contacto-form"
+					class="fx-column">
+					<input
+						type="text"
+						id="nombre"
+						placeholder="Nombre"
+						required />
+
+					<input
+						type="email"
+						id="email"
+						placeholder="Email"
+						required />
+
+					<textarea
+						id="mensaje"
+						placeholder="Mensaje"
+						required></textarea>
+
+					<button
+						type="submit"
+						class="button-action">
+						Enviar
+					</button>
+				</form>
+			</div>
+
+			<div class="redes-sociales-container fx-row">
+				<a
+					href="#"
+					target="_blank"
+					><i class="fa-brands fa-instagram"></i
+				></a>
+				<a
+					href="#"
+					target="_blank"
+					><i class="fa-brands fa-facebook"></i
+				></a>
+				<a
+					href="#"
+					target="_blank"
+					><i class="fa-brands fa-x-twitter"></i
+				></a>
+				<a
+					href="#"
+					target="_blank"
+					><i class="fa-brands fa-whatsapp"></i
+				></a>
+			</div>
+
+			<p>Play & Win &copy; 2023</p>
+		</footer>
+
+		<button id="btn-ir-arriba">
+			<svg viewBox="0 0 24 24">
+				<path d="m4 16 8-8 8 8"></path>
+			</svg>
+		</button>
+
+		<!-- Modal 1-->
+		<div
+			class="modal fade"
+			id="modal-modelo-1"
+			tabindex="-1"
+			aria-labelledby="modal-modelo-1-label"
+			aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5
+							class="modal-title"
+							id="modal-modelo-1-label">
+							Resident Evil 4 Remake
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<!-- Carrusel de imágenes -->
+
+						<div
+							id="carrucel-modelo-1"
+							class="carousel slide">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img
+										src="./img/Juegos/Imagenes-carusel/ashely.jpg"
+										class="d-block w-100"
+										alt="Modelo 1 - 1" />
+								</div>
+								<div class="carousel-item">
+									<img
+										src="./img/Juegos/Imagenes-carusel/leon-sexy.webp"
+										class="d-block w-100"
+										alt="Modelo 1 - 2" />
+								</div>
+								<div class="carousel-item">
+									<img
+										src="./img/Juegos/Imagenes-carusel/leon-sierra.webp"
+										class="d-block w-100"
+										alt="Modelo 1 - 3" />
+								</div>
+							</div>
+							<button
+								class="carousel-control-prev"
+								type="button"
+								data-bs-target="#carrucel-modelo-1"
+								data-bs-slide="prev">
+								<span
+									class="carousel-control-prev-icon"
+									aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button
+								class="carousel-control-next"
+								type="button"
+								data-bs-target="#carrucel-modelo-1"
+								data-bs-slide="next">
+								<span
+									class="carousel-control-next-icon"
+									aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+
+						<!-- Contenido del modal aquí -->
+
+						<ul class="list-group text-small">
+							<li class="list-group-item list-group-item-success">
+								Caracteristicas:
+							</li>
+							<li class="list-group-item">Precio: $1,500.00 MXN</li>
+							<li class="list-group-item">
+								Plataformas: Xbox One, Xbox Series X/S, Play Station 4, Play
+								Station 5, PC
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal 2-->
+		<div
+			class="modal fade"
+			id="modal-modelo-2"
+			tabindex="-1"
+			aria-labelledby="modal-modelo-2-label"
+			aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5
+							class="modal-title"
+							id="modal-modelo-1-label">
+							Zelda Tears of the Kingdom
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<!-- Carrusel de imágenes -->
+						<div
+							id="carrucel-modelo-2"
+							class="carousel slide">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img
+										src="./img/Juegos/Imagenes-carusel/link-animado.jpg"
+										class="d-block w-100"
+										alt="Modelo 2-1" />
+								</div>
+								<div class="carousel-item">
+									<img
+										src="./img/Juegos/Imagenes-carusel/ganon.jpg"
+										class="d-block w-100"
+										alt="Modelo 2-2" />
+								</div>
+								<div class="carousel-item">
+									<img
+										src="./img/Juegos/Imagenes-carusel/link-brazo.jpg"
+										class="d-block w-100"
+										alt="Modelo 2-2" />
+								</div>
+							</div>
+							<button
+								class="carousel-control-prev"
+								type="button"
+								data-bs-target="#carrucel-modelo-2"
+								data-bs-slide="prev">
+								<span
+									class="carousel-control-prev-icon"
+									aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button
+								class="carousel-control-next"
+								type="button"
+								data-bs-target="#carrucel-modelo-2"
+								data-bs-slide="next">
+								<span
+									class="carousel-control-next-icon"
+									aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+
+						<!-- Contenido del modal aquí -->
+
+						<ul class="list-group text-small">
+							<li class="list-group-item list-group-item-info">
+								Caracteristicas:
+							</li>
+							<li class="list-group-item">Precio: $1,500.00 MXN</li>
+							<li class="list-group-item">Plataforma: Nintendo Switch</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal 3-->
+		<div
+			class="modal fade"
+			id="modal-modelo-3"
+			tabindex="-1"
+			aria-labelledby="modal-modelo-3-label"
+			aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5
+							class="modal-title"
+							id="modal-modelo-3-label">
+							God of War Ragnarok
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<!-- Carrusel de imágenes -->
+						<div
+							id="carrucel-modelo-3"
+							class="carousel slide">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img
+										src="./img/Juegos/Imagenes-carusel/kratos-odin.jpg"
+										class="d-block w-100"
+										alt="Modelo 3-1" />
+								</div>
+								<div class="carousel-item">
+									<img
+										src="./img/Juegos/Imagenes-carusel/kratos-ardilla.jpg"
+										class="d-block w-100"
+										alt="Modelo 3-2" />
+								</div>
+								<div class="carousel-item">
+									<img
+										src="./img/Juegos/Imagenes-carusel/kratos-thor.png"
+										class="d-block w-100"
+										alt="Modelo 3-3" />
+								</div>
+							</div>
+							<button
+								class="carousel-control-prev"
+								type="button"
+								data-bs-target="#carrucel-modelo-3"
+								data-bs-slide="prev">
+								<span
+									class="carousel-control-prev-icon"
+									aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button
+								class="carousel-control-next"
+								type="button"
+								data-bs-target="#carrucel-modelo-3"
+								data-bs-slide="next">
+								<span
+									class="carousel-control-next-icon"
+									aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+
+						<!-- Contenido del modal aquí -->
+						<ul class="list-group text-small">
+							<li class="list-group-item list-group-item-primary">
+								Caracteristicas:
+							</li>
+							<li class="list-group-item">Precio: $1,500.00 MXN</li>
+							<li class="list-group-item">
+								Plataforma: Play Station 4, Play Station 5
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
