@@ -597,6 +597,41 @@ textarea {
 
 @media screen and (max-width: 768px) {
 	body {
+		font-size: 20px;
+	}
+
+	section {
+		padding: 40px 45px;
+	}
+
+	.xs-hide {
+		display: none;
+	}
+
+	.fx-xs-column {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card {
+		padding: 40px;
+		margin: 20px 0;
+	}
+
+	.galeria-img {
+		max-width: 100%;
+		padding: 1rem 0;
+		margin: 1rem 0;
+	}
+
+	button.button-action,
+	a.button-link {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	body {
 		font-size: 12px;
 	}
 
@@ -634,7 +669,7 @@ textarea {
 	display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
 	.responsive-menu {
 		display: flex;
 	}
