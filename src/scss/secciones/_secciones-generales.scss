@@ -1,0 +1,26 @@
+section {
+	scroll-margin-top: $size-header;
+	padding: calc($size-header / 2) $size-header;
+}
+
+section > h1 {
+	color: black;
+	text-transform: uppercase;
+	font-size: 2rem;
+	border-bottom: 5px solid black;
+	margin-bottom: 2rem;
+	text-shadow: -0.5px -0.5px 0 rgb(246, 19, 19), 0.5px -0.5px 0 rgb(246, 19, 19),
+		-0.5px 0.5px 0 rgb(246, 19, 19), 0.5px 0.5px 0 rgb(246, 19, 19);
+}
+
+section#modelos {
+	background-image: linear-gradient(
+		90deg,
+		$color-secundario-light,
+		$color-terciario-light
+	);
+}
+
+section#ubicacion {
+	padding: 0;
+}

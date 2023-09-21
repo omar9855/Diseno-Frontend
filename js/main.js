@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	scrollToBottomButtom.addEventListener('click', () => {
 		window.scrollTo({
 			top: 0,
-			// behavior: 'smooth'
 		});
 	});
 });
@@ -31,7 +30,7 @@ reviewImage.addEventListener('click', () => {
 	largeImage.src = reviewImage.src;
 	largeImage.classList.add('large-image');
 
-	largeImageContainer.innerHTML = ''; // Limpia el contenido existente
+	largeImageContainer.innerHTML = '';
 	largeImageContainer.appendChild(largeImage);
 	largeImageContainer.style.display = 'block';
 });

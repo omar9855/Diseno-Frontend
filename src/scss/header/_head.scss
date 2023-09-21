@@ -1,0 +1,51 @@
+header {
+	position: fixed;
+	background: $color-white;
+	width: 100%;
+	height: $size-header;
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+	z-index: 1;
+}
+
+#logo,
+#contacto {
+	height: $size-nav-item;
+	width: $size-nav-item;
+	margin: 10px;
+}
+
+#logo,
+#contacto > img {
+	width: auto;
+	padding: 5px;
+}
+
+nav {
+	height: $size-nav-item;
+	font-size: 1.25rem;
+}
+
+nav ul {
+	list-style: none;
+	margin-bottom: 0;
+}
+
+nav li {
+	padding: 0.75rem 2rem;
+}
+
+nav a {
+	text-decoration: none;
+	font-weight: 600;
+	color: #000000;
+}
+
+nav a:hover {
+	color: #34343a;
+}
+
+nav li:hover,
+#contacto:hover {
+	background-color: $color-background;
+	border-radius: 8px;
+}

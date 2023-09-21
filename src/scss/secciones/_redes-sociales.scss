@@ -1,0 +1,17 @@
+.redes-sociales-container {
+	gap: 1.5rem;
+	padding: 3rem 2rem;
+}
+
+.fa-brands {
+	font-size: 2rem;
+	color: $color-primario;
+}
+
+.fa-brands:hover {
+	color: $color-terciario;
+}
+
+.fa-brands:active {
+	color: $color-terciario-dark;
+}

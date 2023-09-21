@@ -1,0 +1,25 @@
+.fx-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.fx-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.fx-content-space-between {
+	justify-content: space-between;
+}
+
+.fx-content-center {
+	justify-content: center;
+}
+
+.fx-align-items-center {
+	align-items: center;
+}
+
+.text-small {
+	font-size: 0.85rem;
+}

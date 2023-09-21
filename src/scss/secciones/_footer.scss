@@ -1,0 +1,25 @@
+footer {
+	background: rgb(17, 17, 17);
+	color: var(--color-white);
+	text-align: center;
+	padding: 6rem 3rem;
+}
+
+.contacto-container {
+	width: 600px;
+	max-width: 100%;
+}
+
+.contacto-container h2 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+}
+
+input,
+textarea {
+	margin-bottom: 1rem;
+	padding: 8px;
+	border: 1px solid $color-background;
+	border-radius: 3px;
+}

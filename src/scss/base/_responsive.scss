@@ -1,0 +1,153 @@
+@media screen and (max-width: 1440px) {
+	body {
+		font-size: 14px;
+	}
+
+	section {
+		padding: 40px 70px;
+	}
+
+	.destacados-container {
+		padding: 0;
+		gap: 45px;
+	}
+
+	.card {
+		padding: 1.5rem;
+		margin: 1.5rem;
+	}
+
+	.galeria-img {
+		max-width: 350px;
+		padding: 1rem;
+		margin: 1rem;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	body {
+		font-size: 13px;
+	}
+
+	section {
+		padding: 40px 50px;
+	}
+
+	section > h1 {
+		font-size: 1.5rem;
+	}
+
+	nav {
+		font-size: 1.125rem;
+	}
+
+	.destacados-container {
+		gap: 20px;
+	}
+
+	.card {
+		padding: 0.9rem;
+		margin: 0.9rem;
+	}
+
+	.galeria-img {
+		max-width: 300px;
+		padding: 0.5rem;
+		margin: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 20px;
+	}
+
+	section {
+		padding: 40px 45px;
+	}
+
+	.xs-hide {
+		display: none;
+	}
+
+	.fx-xs-column {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card {
+		padding: 40px;
+		margin: 20px 0;
+	}
+
+	.galeria-img {
+		max-width: 100%;
+		padding: 1rem 0;
+		margin: 1rem 0;
+	}
+
+	button.button-action,
+	a.button-link {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		font-size: 12px;
+	}
+
+	section {
+		padding: 40px 45px;
+	}
+
+	.xs-hide {
+		display: none;
+	}
+
+	.fx-xs-column {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card {
+		padding: 40px;
+		margin: 20px 0;
+	}
+
+	.galeria-img {
+		max-width: 100%;
+		padding: 1rem 0;
+		margin: 1rem 0;
+	}
+
+	button.button-action,
+	a.button-link {
+		font-size: 1rem;
+	}
+}
+
+.responsive-menu {
+	display: none;
+}
+
+@media (min-width: 1000px) {
+	.responsive-menu {
+		display: flex;
+	}
+
+	.responsive-cel {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.testimonio-imagen {
+		height: 120px;
+		width: 120px;
+	}
+
+	.testimonio-texto {
+		font-size: 18px;
+	}
+}

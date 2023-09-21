@@ -1,0 +1,36 @@
+#home {
+	height: 100vh;
+	background: url('https://png.pngtree.com/background/20230519/original/pngtree-an-image-of-a-video-game-controller-that-consists-of-many-picture-image_2667717.jpg')
+		no-repeat center center fixed;
+	background-size: cover;
+	color: $color-white;
+}
+
+.home-banner {
+	gap: 1rem;
+	background-color: $color-primario-dark;
+	opacity: 0.9;
+	padding: 3rem;
+}
+
+.home-banner > h1 {
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+.home-banner > h3 {
+	font-size: 1.5rem;
+}
+
+.lista {
+	text-shadow: -0.5px -0.5px 0 rgb(246, 19, 19), 0.5px -0.5px 0 rgb(246, 19, 19),
+		-0.5px 0.5px 0 rgb(246, 19, 19), 0.5px 0.5px 0 rgb(246, 19, 19);
+}
+
+.lista-cel a {
+	text-shadow: -0.5px -0.5px 0 rgb(246, 19, 19), 0.5px -0.5px 0 rgb(246, 19, 19),
+		-0.5px 0.5px 0 rgb(246, 19, 19), 0.5px 0.5px 0 rgb(246, 19, 19);
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: black;
+}

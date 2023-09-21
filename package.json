@@ -1,0 +1,17 @@
+{
+	"name": "pagina-web-video-juego",
+	"version": "1.0.0",
+	"description": "proyecto frontend",
+	"main": "index.js",
+	"scripts": {
+		"sass": "sass --watch src/scss:build/css "
+	},
+	"keywords": [
+		"sass"
+	],
+	"author": "omar",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.67.0"
+	}
+}
